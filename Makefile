@@ -9,3 +9,6 @@ main.o: main.c
 
 clean:
 	rm -f *~ *.o test
+
+newsie:
+	curl https://ie.u-ryukyu.ac.jp/news-ie/feed/ | grep title
